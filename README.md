@@ -6,7 +6,7 @@ Description
 
 - `git clone` this repository (preferred) or fork this repository
 
-To enhance your work environment, we recommend installing the [Luau LSP Extension](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.luau-lsp). We suggest using Version 1.31.1, as it is the version we utilize.
+To enhance your work environment, we recommend installing the [Luau LSP Extension](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.luau-lsp). We suggest using Version 1.33.1, as it is the version we utilize.
 
 ## Bundling everything
 
