@@ -6,12 +6,14 @@ on:
       - '**.luau'
       - '**.lua'
       - '**.rbxm'
+      - '**.rbxmx'
       - '**.json'
   pull_request:
     paths:
       - '**.luau'
       - '**.lua'
       - '**.rbxm'
+      - '**.rbxmx'
       - '**.json'
 
 permissions:
@@ -37,7 +39,7 @@ jobs:
           rokit install
 
       - name: Bundle
-        run: lune run Build bundle input='default.project.json' minify=true output='Distribution/Script.luau' env-name='Script' darklua-config-path='Build/DarkLua.json' temp-dir-base='Distribution' verbose=true ci-mode=true
+        run: lune run Build bundle header=Build/Header.luau minify=true ci-mode=true
 
       - name: Upload Minified Script to Artifacts
         uses: actions/upload-artifact@v4

@@ -33,11 +33,11 @@ local stdio = require("@lune/stdio")
 local roblox = require("@lune/roblox")
 local process = require("@lune/process")
 
-local LuneUtils = require("lib/libraries/LuneUtils")
-local BundleModel = require("lib/BundleModel")
+local LuneUtils = require("Lib/Libraries/LuneUtils")
+local BundleModel = require("Lib/BundleModel")
 
-local Version = require("lib/data/Version")
-local DefaultDarkluaConfig = require("lib/data/DefaultDarkluaConfig")
+local Version = require("Lib/Data/Version")
+local DefaultDarkluaConfig = require("Lib/Data/DefaultDarkluaConfig")
 
 local Log = LuneUtils.Log
 local StringUtils = LuneUtils.StringUtils
@@ -78,7 +78,7 @@ SUBCOMMANDS:
             your PATH environment variable.
             Additionally, with Darklua, if a ".darklua.json/json5" file isn't found in the
             CWD (your dir "position" in your terminal), it'll use the default configuration
-            we provide (see `lune/lib/data/DefaultDarkluaConfig.luau`)
+            we provide (see `lune/Lib/Data/DefaultDarkluaConfig.luau`)
     
       * env-name[="Wax Script"]
             The name of the "environment" of the bundled script. This is the "name" of
